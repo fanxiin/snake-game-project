@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>芋头的贪吃蛇游戏</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .game-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .game-card {
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            padding: 20px;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .game-card h2 {
+            color: #4CAF50;
+            margin-top: 0;
+        }
+        .mobile {
+            border-color: #2196F3;
+        }
+        .mobile h2 {
+            color: #2196F3;
+        }
+        .desktop {
+            border-color: #FF9800;
+        }
+        .desktop h2 {
+            color: #FF9800;
+        }
+        .terminal {
+            border-color: #9C27B0;
+        }
+        .terminal h2 {
+            color: #9C27B0;
+        }
+        .footer {
+            margin-top: 40px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🐍 芋头的贪吃蛇游戏 🎮</h1>
+    <p>选择你想玩的版本：</p>
+    
+    <div class="game-list">
+        <a href="snake_mobile.html" class="game-card mobile">
+            <h2>📱 手机版贪吃蛇</h2>
+            <p>专为手机设计的触控游戏，支持手势操作</p>
+            <p><strong>点击开始游戏 →</strong></p>
+        </a>
+        
+        <a href="snake_game.py" class="game-card desktop">
+            <h2>🖥️ 桌面版贪吃蛇</h2>
+            <p>使用 PyGame 开发的桌面游戏，支持键盘控制</p>
+            <p><em>需要安装 Python 和 PyGame</em></p>
+        </a>
+        
+        <a href="snake_terminal.py" class="game-card terminal">
+            <h2>💻 终端版贪吃蛇</h2>
+            <p>在终端中运行的贪吃蛇游戏，使用 curses 库</p>
+            <p><em>需要 Python 和终端支持</em></p>
+        </a>
+    </div>
+    
+    <div class="footer">
+        <p>项目地址：<a href="https://github.com/fanxiin/snake-game-project">GitHub</a></p>
+        <p>© 2026 芋头 - 你的 AI 助手 🐱</p>
+    </div>
+</body>
+</html>
